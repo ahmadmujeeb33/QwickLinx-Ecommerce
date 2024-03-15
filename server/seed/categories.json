@@ -1,0 +1,10 @@
+
+[
+    {"title":"Sports", "image": "../../public/Sports.jpg"},
+    {"title":"Electronics", "image": "../../public/electronics.PNG"},
+    {"title":"Clothes", "image":  "../../public/clothes.png"},
+    {"title":"Movies", "image": "../../public/movies.jpg"},
+    {"title":"Beauty", "image": "../../public/beauty.jpg"},
+    {"title":"Pets", "image": "../../public/pets.PNG"}
+
+]
