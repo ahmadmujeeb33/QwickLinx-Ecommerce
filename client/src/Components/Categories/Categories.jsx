@@ -1,13 +1,6 @@
 
-import sports from '../../public/Sports.jpg'
-// import electronics from '../../public/electronics.PNG'
-// import clothes from '../../public/clothes.png'
-// import movies from '../../public/movies.jpg'
-// import beauty from '../../public/beauty.jpg'
-// import pets from '../../public/pets.PNG'
-
 import { useData } from './hooks/useData';
-
+import { Link } from "react-router-dom"
 
 
 
@@ -15,7 +8,7 @@ export const Categories = () => {
 
     const allCategories = useData()
 
-    console.log("allCategories", allCategories)
+
 
     return (
         <>
@@ -27,7 +20,6 @@ export const Categories = () => {
                                 <img class="block mx-auto max-w-full rounded-t-lg md:rounded-none" src={category.image} alt="" />
                             </a>
                         </div> 
-                        // console.log("category", category.image)
                         }
 
                         <div class="flex-grow p-5 text-center">
@@ -35,8 +27,18 @@ export const Categories = () => {
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{category.name}</h5>
                             </a>
                         </div>`
+                        <Link to={`/categories/${category._id}`}>
+                            <div class="flex justify-center items-center pb-4">
+                                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+                                    View Category
+                                </button>
+                            </div>
+                        </Link>
                     </div>
-         ))}
+                    
+                ))}
+
+               
             </div>
 
         </>
