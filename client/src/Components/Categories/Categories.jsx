@@ -24,7 +24,7 @@ export const Categories = () => {
                     <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         {<div class="w-48 md:w-72 mx-auto pt-4">
                             <a href="#">
-                                <img class="block mx-auto max-w-full rounded-t-lg md:rounded-none" src='../../public/Sports.jpg' alt="" />
+                                <img class="block mx-auto max-w-full rounded-t-lg md:rounded-none" src={category.image} alt="" />
                             </a>
                         </div> 
                         // console.log("category", category.image)
