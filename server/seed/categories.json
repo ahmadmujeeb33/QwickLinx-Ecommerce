@@ -1,10 +1,9 @@
 
 [
-    {"title":"Sports", "image": "../../public/Sports.jpg"},
-    {"title":"Electronics", "image": "../../public/electronics.PNG"},
-    {"title":"Clothes", "image":  "../../public/clothes.png"},
-    {"title":"Movies", "image": "../../public/movies.jpg"},
-    {"title":"Beauty", "image": "../../public/beauty.jpg"},
-    {"title":"Pets", "image": "../../public/pets.PNG"}
-
+    {"title":"Sports", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/Sports.jpg"},
+    {"title":"Electronics", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/electronics.PNG"},
+    {"title":"Clothes", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/clothes.png"},
+    {"title":"Movies", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/movies.jpg"},
+    {"title":"Beauty", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/beauty.jpg"},
+    {"title":"Pets", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/pets.PNG"}
 ]

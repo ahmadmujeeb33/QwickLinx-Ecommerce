@@ -8,13 +8,13 @@ const productSchema = new Schema({
     required: true,
     unique: true,
   },
-  category: {
-    type: String,
+  price: {
+    type: Number,
     required: true,
     unique: true,
   },
-  price: {
-    type: Number,
+  description: {
+    type: String,
     required: true,
     unique: true,
   },

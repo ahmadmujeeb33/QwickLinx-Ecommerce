@@ -12,7 +12,14 @@ const categorySchema = new Schema({
     type: String,
     required: true,
     unique: true,
-  }
+  },
+
+  products: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Product"
+    }
+  ],
 
 });
 

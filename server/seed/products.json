@@ -1,0 +1,7 @@
+
+[
+    {"title":"Baketball", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/Sports.jpg", "price" : 20, "description": "New Basketbll for sale"},
+    {"title":"Baseball", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/electronics.PNG", "price" : 20,"description": "New Basketbll for sale"},
+    {"title":"Cricket Bat", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/clothes.png","price" : 20,"description": "New Basketbll for sale"},
+    {"title":"Hockey Stick", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/movies.jpg", "price" : 20,"description": "New Basketbll for sale"}
+]
