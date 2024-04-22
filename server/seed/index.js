@@ -5,10 +5,19 @@ const { User, Product, Category} = require('../models');
 
 const categories = require('./categories.json');
 const products = require('./products.json')
+const users = require('./users.json')
 
 
 
 db.once('open', async () => {
+
+    await Promise.all(users.map(async(user) => {
+        return await User.create({
+            "userName": user.userName,
+            "password": user.password,
+            "email": user.email,
+        })
+    }))
 
     let productIndex = 0
 
