@@ -1,15 +1,17 @@
 const router = require('express').Router();
-const { addUser } = require('../../services/users');
+const { getSpecificProduct } = require('../../services/products');
 
 
-router.get('/', async(req, res) => {
-    const userName = req.body.userName
-    const email = req.body.email
-    const password = req.body.password
 
-    try {
-        const userData = await addUser(userName, email, password);
-        res.status(200).json(userData);
+
+router.get('/:id', async(req, res) => {
+
+    try{ 
+        const id = req.params.id;
+        console.log("id", id)
+        const data = await getSpecificProduct(id);
+        console.log("data", data)
+        res.status(200).json(data);
     } catch (err) {
         res.status(500).json(err);
     }

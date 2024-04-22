@@ -25,11 +25,9 @@ db.once('open', async () => {
         await Category.create({
             "name": category.title,
             "image": category.image,
-            "products": [productData[productIndex].id,productData[productIndex+1].id,productData[productIndex+2].id,productData[productIndex+3].id]
+            "products": [productData[productIndex]._id,productData[productIndex+1]._id,productData[productIndex+2]._id,productData[productIndex+3]._id]
         })
         productIndex+=4
-
-        console.log("productIndex", productData[productIndex])
    }))
 
   process.exit();
