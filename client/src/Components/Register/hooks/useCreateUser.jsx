@@ -11,7 +11,7 @@ export const useCreateUser = (setError)=>{
 
         }
         catch (error) {
-            setError('Please make sure all fields are unique')    
+            setError('User already exists with this email ')    
         }
 
     }
