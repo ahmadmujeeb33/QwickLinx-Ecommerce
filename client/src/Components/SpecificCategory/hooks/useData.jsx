@@ -13,7 +13,7 @@ export const useData = ( id ) => {
             console.log("id", id)
             const categoriesData = await axios.get(`/api/categories/${id}`)
             console.log("categoriesData", categoriesData)
-            setData(categoriesData.data)
+            setData(categoriesData.data.products)
         }
         grabCategoriesData()
     }, []);
