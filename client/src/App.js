@@ -5,6 +5,7 @@ import { Login } from './Components/Login/Login';
 import { Register } from './Components/Register/Register';
 import { Categories } from './Components/Categories/Categories'
 import { SpecificCategory } from './Components/SpecificCategory/SpecificCategory';
+import { Products } from './Components/Products/Products';
 
 
 import { Routes, Route } from "react-router-dom";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/logout" element={<Register />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/categories/:id" element={<SpecificCategory />} />
+          <Route path="/products/:id" element={<Products />} />
         </Routes>
       </div>
     </div>

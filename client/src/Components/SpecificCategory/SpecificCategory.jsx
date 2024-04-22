@@ -14,7 +14,6 @@ export const SpecificCategory = () => {
 
     const products = useData(id)
 
-    console.log("products", products)
 
     return (
         <>
@@ -33,9 +32,9 @@ export const SpecificCategory = () => {
             </div>
 
             <div class="w-full">
-                <Link to={`/categories`}>
+                <Link to={`/products/${product.id}`}>
                     <div class="flex justify-center items-center pb-4">
-                        <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
                             View More Details
                         </button>
                     </div>

@@ -35,6 +35,7 @@ class AuthService {
     }
   
     logout() {
+      console.log("in lgoout")
       localStorage.removeItem('id_token');
       window.location.assign('/');
     }
