@@ -1,29 +1,15 @@
 
-
-import { useParams } from 'react-router-dom';
-import { useData } from './hooks/useData';
-import { Link } from "react-router-dom"
-
-
-
-
-export const SpecificCategory = () => {
-
-
-    let { id } = useParams();
-
-    const products = useData(id)
+export const Cart = () => {
 
 
     return (
-        <>
-        
+        <div>
             <div class="flex flex-wrap w-3/5  gap-5 justify-center md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 mx-auto">
                 {products.data.length > 0 && products.data.map((product, index) => (
-                    <div key={index} class=" flex flex-wrap w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
-                        <div class="w-full flex justify-center"  >
-                            <img src={product.image} alt="" style={{ width: '300px', height: '250px' }} />
-                        </div>
+                    <div key={index} class="flex flex-wrap w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
+                        <a href="#">
+                            <img class="rounded-t-lg" src={product.image} alt="" />
+                        </a>
                         <div class="p-5">
                             <a href="#">
                                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{product.name}</h5>
@@ -43,6 +29,11 @@ export const SpecificCategory = () => {
                     </div>
                 ))}
             </div>
-        </>
+
+        </div>
     )
+
+
+
+
 }
