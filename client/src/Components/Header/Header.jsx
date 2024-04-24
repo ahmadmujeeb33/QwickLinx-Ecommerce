@@ -5,6 +5,7 @@ import { IoPerson } from "react-icons/io5";
 import { FaAddressCard } from "react-icons/fa";
 import { FaLayerGroup } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 
 import Auth from '../../utils/auth';
@@ -21,7 +22,11 @@ export const Header = () =>{
             <button class="flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                 <FaLayerGroup />
                 <Link to ="/categories"  className="items">Categories</Link>
-            </button>     
+            </button> 
+            <button class="flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                <FaSearch />
+                <Link to ="/search"  className="items">Search</Link>
+            </button>        
             <button class="flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                 <FaCartArrowDown />
                 <Link to ="/categories"  className="items">Cart</Link>
