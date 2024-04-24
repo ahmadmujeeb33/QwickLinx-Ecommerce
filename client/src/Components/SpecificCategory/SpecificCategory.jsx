@@ -18,9 +18,9 @@ export const SpecificCategory = () => {
     return (
         <>
         
-            <div class="flex flex-wrap w-3/5  gap-5 justify-center md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 mx-auto">
+            <div class="flex flex-wrap w-3/5   gap-5 justify-center md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 mx-auto">
                 {products.data.length > 0 && products.data.map((product, index) => (
-                    <div key={index} class=" flex flex-wrap w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-4">
+                    <div key={index} class=" flex flex-wrap w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-4 pt-5">
                         <div class="w-full flex justify-center"  >
                             <img src={product.image} alt="" style={{ width: '300px', height: '250px' }} />
                         </div>
