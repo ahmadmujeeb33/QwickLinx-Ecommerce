@@ -6,7 +6,7 @@ export const useCreateUser = (setError)=>{
     const onSubmit = async(data) =>{
         try {
             const userData = await axios.post("/api/users/register",data)
-            Auth.login(userData.data.token)
+            Auth.login(userData.data.token, userData.data.id)
             setError('')    
 
         }
