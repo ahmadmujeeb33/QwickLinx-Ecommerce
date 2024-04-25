@@ -29,7 +29,7 @@ export const Header = () =>{
             </button>        
             <button class="flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                 <FaCartArrowDown />
-                <Link to ="/categories"  className="items">Cart</Link>
+                <Link to ="/cart"  className="items">Cart</Link>
             </button>   
             <button onClick = { () => Auth.logout()} class="flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                 <IoPerson />

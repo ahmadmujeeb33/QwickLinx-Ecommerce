@@ -7,6 +7,7 @@ import { Categories } from './Components/Categories/Categories'
 import { SpecificCategory } from './Components/SpecificCategory/SpecificCategory';
 import { Products } from './Components/Products/Products';
 import { Search } from './Components/Search/Search'
+import { Cart } from './Components/Cart/Cart';
 
 
 import { Routes, Route } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/categories/:id" element={<SpecificCategory />} />
           <Route path="/products/:id" element={<Products />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
     </div>

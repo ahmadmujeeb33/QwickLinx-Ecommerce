@@ -1,7 +1,7 @@
 
 
 import { useParams } from 'react-router-dom';
-import { useData, } from './hooks/useData';
+import { useData } from './hooks/useData';
 import { useAddToCart } from './hooks/useAddToCart';
 
 
