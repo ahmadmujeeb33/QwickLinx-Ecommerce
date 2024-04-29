@@ -13,10 +13,11 @@ router.get('/search', async(req, res) => {
     const search = req.query.title
 
     try{ 
-        const data = await getFilteredProducts(id);
+        const data = await getFilteredProducts(search);
         console.log("data", data)
         res.status(200).json(data);
     } catch (err) {
+        console.log("err", err)
         res.status(500).json(err);
     }
 })
