@@ -11,20 +11,22 @@ export const useData = () => {
     }, []);
 
     const grabCartData = async () => {
-        console.log("in data")
         const userId = localStorage.getItem("id")
         const productsData =  await axios.get(`/api/users/${userId}/cart`)
-        console.log("", productsData)
         setData(productsData.data)
     }
 
     const removeFromCart = async (productId) => {
         const userId = localStorage.getItem("id")
-        console.log("userId", userId)
-        console.log("productId", productId)
         await axios.delete(`/api/users/${userId}/cart/${productId}`)
         grabCartData()
     }
 
-    return { data, removeFromCart }
+    const removeAllFromCart = async() => {
+        const userId = localStorage.getItem("id")
+        await axios.delete(`/api/users/${userId}/cart`)
+        setData([])
+    }
+
+    return { data, removeFromCart, removeAllFromCart }
 }
