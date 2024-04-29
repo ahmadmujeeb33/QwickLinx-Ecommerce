@@ -20,10 +20,8 @@ router.get('/:id', async(req, res) => {
     
     try {
         const categoryData = await getSpecificCategory(id);
-        console.log("categoryData",categoryData)
         res.status(200).json(categoryData);
     } catch (err) {
-        console.log("error",err)
         res.status(500).json(err);
     }
 })

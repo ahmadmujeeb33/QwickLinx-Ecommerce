@@ -19,7 +19,7 @@ db.once('open', async () => {
         })
     }))
 
-    let productIndex = 0
+    let productIndex = -4
 
     const productData = await Promise.all(products.map(async(product) => {
         return await Product.create({
@@ -31,12 +31,14 @@ db.once('open', async () => {
     }))
 
     await Promise.all(categories.map(async(category) => {
+        console.log("productIndex", productIndex)
+        productIndex+=4
+        console.log("category", category)
         await Category.create({
             "name": category.title,
             "image": category.image,
             "products": [productData[productIndex]._id,productData[productIndex+1]._id,productData[productIndex+2]._id,productData[productIndex+3]._id]
         })
-        productIndex+=4
    }))
 
   process.exit();

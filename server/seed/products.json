@@ -1,7 +1,33 @@
 
 [
-    {"title":"Baketball", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/Sports.jpg", "price" : 20, "description": "New Basketbll for sale"},
-    {"title":"Baseball", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/electronics.PNG", "price" : 20,"description": "New Basketbll for sale"},
-    {"title":"Cricket Bat", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/clothes.png","price" : 20,"description": "New Basketbll for sale"},
-    {"title":"Hockey Stick", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/movies.jpg", "price" : 20,"description": "New Basketbll for sale"}
+    {"title":"Baketball", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/basketall.jpg", "price" : 20, "description": "New Basketbll for sale"},
+    {"title":"Baseball", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/baseball.PNG", "price" : 10,"description": "New Baseball for sale"},
+    {"title":"Cricket Bat", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/bat.PNG","price" : 40,"description": "New Cricket Bat for sale"},
+    {"title":"Hockey Stick", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/stick.PNG", "price" : 50,"description": "New Hockey Stick for sale"},
+
+    {"title":"PS5", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/PS5.PNG", "price" : 600, "description": "New PS5 for sale"},
+    {"title":"Tv", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/Tv.PNG", "price" : 200,"description": "New Tv for sale"},
+    {"title":"Computer", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/computer.PNG","price" : 110,"description": "New Computer for sale"},
+    {"title":"Camera", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/camera.PNG", "price" : 60,"description": "New Camera for sale"},
+
+    {"title":"Sweater", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/sweater.PNG", "price" : 25, "description": "New Sweater for sale"},
+    {"title":"T-shirt", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/Tshirt.PNG", "price" : 10,"description": "New T-shirt for sale"},
+    {"title":"Dress", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/dress.PNG","price" : 60,"description": "New Dress for sale"},
+    {"title":"Pants", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/pants.PNG", "price" : 15,"description": "New Pants for sale"},
+
+    {"title":"Lord of The Rings", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/LordOfTheRings.PNG", "price" : 5, "description": "Lord of the rings movie for sale"},
+    {"title":"Mission Impossible", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/MissionImpossible.PNG", "price" : 3,"description": "Mission Impossible movie for sale"},
+    {"title":"Indiana Jones", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/Indiana+Jones.PNG","price" : 10,"description": "Indiana Jones movie for sale"},
+    {"title":"Godfather", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/Godfather.PNG", "price" : 20,"description": "Godfather movie for sale"},
+
+    
+    {"title":"Perfume", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/Perfume.PNG", "price" : 65, "description": "Perfume for sale"},
+    {"title":"Lipstick", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/Lipstick.PNG", "price" : 40,"description": "Lipstick for sale"},
+    {"title":"Nail Polish", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/nailpolish.PNG","price" : 30,"description": "Nail Polish for sale"},
+    {"title":"Skin Care", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/skincare.PNG", "price" : 20,"description": "Skin Care for sale"},
+
+    {"title":"Pet Snacks", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/PetSnacks.PNG", "price" : 65, "description": "Perfume for sale"},
+    {"title":"Pet Toys", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/PetToys.PNG", "price" : 40,"description": "Pet Toys for sale"},
+    {"title":"Pet House", "image":  "https://ecommerce09.s3.ca-central-1.amazonaws.com/PetHouse.PNG","price" : 55,"description": "Pet House for sale"},
+    {"title":"Dog Leash", "image": "https://ecommerce09.s3.ca-central-1.amazonaws.com/DogLeash.PNG", "price" : 22,"description": "Dog Leash for sale"}
 ]

@@ -1,8 +1,25 @@
 const router = require('express').Router();
-const { getSpecificProduct } = require('../../services/products');
+const { getSpecificProduct, getFilteredProducts } = require('../../services/products');
 
 
 
+
+router.get('/search', async(req, res) => {
+
+    console.log("in search")
+
+    console.log("req.params", req.query)
+
+    const search = req.query.title
+
+    try{ 
+        const data = await getFilteredProducts(id);
+        console.log("data", data)
+        res.status(200).json(data);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+})
 
 router.get('/:id', async(req, res) => {
 
@@ -16,5 +33,6 @@ router.get('/:id', async(req, res) => {
         res.status(500).json(err);
     }
 })
+
 
 module.exports = router;

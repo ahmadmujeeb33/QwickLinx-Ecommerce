@@ -17,7 +17,6 @@ const userSchema = new Schema({
     required: true,
     trim: true,
     sparse:true,
-    unique: true,
   },
   email: {
     type: String,
@@ -29,9 +28,14 @@ const userSchema = new Schema({
     type: String,
     required: true,
     sparse:true,
-    unique: true,
-
   },
+
+  carts: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Product"
+    }
+  ],
 
 });
 
